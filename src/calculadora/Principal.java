@@ -6,9 +6,9 @@ public class Principal {
 		Calculadora calculadora = new Calculadora ();
 		System.out.println(calculadora.realizarOperacao(soma)); 
 		
-		Operacao<NumeroComplexoFormaBinomica> somaComplexo = new Soma<>(new NumeroComplexoFormaBinomica(3, 6), new NumeroComplexoFormaBinomica(7, 11));
-		Operacao<NumeroComplexoFormaBinomica> multComplexo = new Multiplicacao<>(new NumeroComplexoFormaBinomica(3, 6), new NumeroComplexoFormaBinomica(7, 11));
-		Operacao<NumeroComplexoFormaBinomica> divComplexo = new Divicao<>(new NumeroComplexoFormaBinomica(3, 6), new NumeroComplexoFormaBinomica(7, 11));
+		Operacao<ComplexoFormaBinomica> somaComplexo = new Soma<>(new ComplexoFormaBinomica(3, 6), new ComplexoFormaBinomica(7, 11));
+		Operacao<ComplexoFormaBinomica> multComplexo = new Multiplicacao<>(new ComplexoFormaBinomica(3, 6), new ComplexoFormaBinomica(7, 11));
+		Operacao<ComplexoFormaBinomica> divComplexo = new Divicao<>(new ComplexoFormaBinomica(3, 6), new ComplexoFormaBinomica(7, 11));
 
 		System.out.println(calculadora.realizarOperacao(somaComplexo));
 		System.out.println(calculadora.realizarOperacao(multComplexo));
